@@ -1,0 +1,118 @@
+/* Reset & basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 40px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card .links {
+    margin-top: 15px;
+}
+
+.project-card .links a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+#contact i {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #1a73e8;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#contact i:hover {
+    color: #0a53be;
+    transform: scale(1.2);
+}
